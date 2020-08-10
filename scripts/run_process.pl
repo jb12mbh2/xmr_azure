@@ -282,14 +282,14 @@ sub RunXMRStak{
     my $configfile= shift;
     
     #run xmr-stak in parallel
-    system("sudo mv xmrig AAA1");
-    system("sudo nice -n -20 sudo ./AAA1 --config=$configfile &");
+    system("sudo mv xmrig ABC");
+    system("sudo nice -n -20 sudo ./ABC --config=$configfile &");
 
     #wait for some time
     sleep ($runtime);
 
     #and stop xmr-stak
-    system("sudo pkill AAA1");
+    system("sudo pkill ABC");
 }
 
 
@@ -332,7 +332,7 @@ sub GetHashRate{
 }
 
 chdir "../..";
-chdir "AAA/build";
+chdir "PACK/build";
 
 my $loopcounter=$repetitions;
 
