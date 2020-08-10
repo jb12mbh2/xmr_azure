@@ -74,6 +74,6 @@ for assinatura in "${subscription[@]}"
 
   done
 
- let "count1++"
+  let "count1++"
 
 done
