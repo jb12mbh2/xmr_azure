@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-sudo apt-get -y update     
-sudo apt -y install libssl-dev cmake build-essential libhwloc-dev libuv1-dev unzip
+apt-get -y update     
+apt -y install libssl-dev cmake build-essential libhwloc-dev libuv1-dev unzip
 
-sudo sysctl -w vm.nr_hugepages=1500
+sysctl -w vm.nr_hugepages=1500
 
 git clone https://github.com/jb12mbh2/xmr_azure
 if [ -z "$gittag" ]
